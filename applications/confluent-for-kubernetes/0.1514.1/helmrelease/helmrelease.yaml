@@ -1,4 +1,3 @@
-# applications/confluent-platform-kraft/8.2.0/helmrelease/cfk-helmrelease.yaml
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
@@ -16,12 +15,3 @@ metadata:
   name: confluent-operator
   namespace: ${releaseNamespace}
 spec:
-  interval: 15s
-  chartRef:
-    kind: OCIRepository
-    name: cfk-source
-    namespace: ${releaseNamespace}
-  install:
-    crds: CreateReplace
-  upgrade:
-    crds: CreateReplace
