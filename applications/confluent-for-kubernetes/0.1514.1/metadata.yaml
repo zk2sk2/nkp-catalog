@@ -1,16 +1,15 @@
 schema: catalog.nkp.nutanix.com/v1/application-metadata
 allowMultipleInstances: true
 category:
-- general
+  - general
 description: ""
 displayName: confluent-for-kubernetes
 icon: ""
 licensing:
-- Pro
-- Ultimate
+  - Pro
+  - Ultimate
 overview: ""
 scope:
-- workspace
-- project
-supportLink: ""
----
+  - workspace
+  - project
+supportLink: "https://docs.confluent.io/operator/current/overview.html"
